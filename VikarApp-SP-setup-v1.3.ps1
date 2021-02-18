@@ -15,7 +15,7 @@ $siteUrl = "$sharepointRootUrl/sites/$siteName"
 $siteOwnerUpn = "<user upn>"
 
 #Connect and create site
-connect-pnponline -Url $siteUrl -Interactive
+connect-pnponline -Url $sharepointRootUrl -Interactive
 
 $newSite = New-PnPSite -Type TeamSite -Title $siteName -Alias $siteName -Owners $siteOwnerUpn
 
